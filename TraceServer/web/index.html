@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>晴空的一滴雨</title>
+</head>
+<body>
+<header>
+  <h1>运动类轨迹记录Demo（Android和Tomcat源码）</h1>
+  <h4>个人主页:http://lujianchao.com</h4>
+  <h4>个人主页:http://itgowo.com</h4>
+  <h4>声明：文件下载使用的是我自己写的文件服务器，所有文件都是一个id表示，支持断点续传，同名（同路径）文件会被替换，从C盘移动到d盘再次上传会被认为是两个文件，同一个路径视为同一个文件进行更新，空间有限，只能这样了</h4>
+  <a href="http://lujianchao.com:8081/Server/file/download?fileid=58">App和Server源码</a> </header>
+<main>
+  <h2>简单介绍</h2>
+</main>
+<h3>1:Android demo最开始页面</h3>
+<h4>地图使用的是百度地图，单独申请的key，放到了源码中</h4>
+<table  width="90%" border="1" cellpadding="2" cellspacing="1">
+  <tbody>
+    <tr>
+      <td  ><h4>默认进来就会获取总运动里程和总时间，切换运动类型可以更新数据</h4>
+        <h4>右上角一个是排行，因为demo没有用户区分处理，所以无效，另一个是记录，根据首页选择运动类型显示相应类型数据记录</h4></td>
+      <td><img src="0.jpg" width="270" height="480" alt=""/></td>
+    </tr>
+    <tr>
+      <td  ><h4>因为在楼间定位不准确，只能这么看了</h4>
+        <h4>配速是单位路程所使用的时间，这里是千米每秒，显示格式为分秒，如果超过1小时会显示小时</h4></td>
+      <td><img src="1.jpg" width="270" height="480" alt=""/></td>
+    </tr>
+    <tr>
+      <td  ><h4>按住锁屏按钮有动画并计时，计时到了全屏加一层遮罩</h4>
+        <h4>滑动解锁</h4></td>
+      <td><img src="2.jpg" width="270" height="480" alt=""/></td>
+    </tr>
+    <tr>
+      <td ><h4>运动中可以点击下方距离时间区域，自动收回和展开，有动画</h4></td>
+      <td><img src="3.jpg" width="270" height="480" alt=""/></td>
+    </tr>
+    <tr>
+      <td  ><h4>根据日期分割</h4>
+        <h4>列表支持刷新和加载更多，增加自定义方法，空数据有单独显示，默认加了上次刷新时间提示</h4></td>
+      <td><img src="4.jpg" width="270" height="480" alt=""/></td>
+    </tr>
+    <tr>
+      <td ><h4>上面右侧是分享记录的路程</h4>
+        <h4>左上是用户名和备注信息</h4>
+        <h4>用画笔画的bitmap</h4></td>
+      <td><img src="5.jpg" width="270" height="480" alt=""/></td>
+    </tr>
+  </tbody>
+</table>
+<h3>1:Tomcat 源码</h3>
+<h4>使用了fastjson和sqlite-jdbc，不用担心数据库有密码泄露了(ˇˍˇ) 想～</h4>
+<h4>Servlet是用IntelliJ IDEA开发的，只有一个Servlet做了上传记录获取记录和列表等多个功能，个人感觉一个接口就够用了</h4>
+<h4>非专业开发，勿喷，有用中文做参数的</h4>
+<h4>QQ：1264957104</h4>
+<h4>个人主页:http://lujianchao.com</h4>
+<h4>个人主页:http://itgowo.com</h4>
+</body>
+</html>

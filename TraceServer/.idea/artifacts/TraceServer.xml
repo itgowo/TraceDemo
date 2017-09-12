@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="TraceServer">
+    <output-path>$PROJECT_DIR$/out/artifacts/TraceServer</output-path>
+    <root id="archive" name="TraceServer.war">
+      <element id="javaee-facet-resources" facet="TraceServer/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TraceServer" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/Libs/fastjson-1.2.32.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Libs/sqlite-jdbc-3.16.1.jar" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

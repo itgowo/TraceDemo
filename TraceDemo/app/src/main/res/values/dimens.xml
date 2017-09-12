@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="t1">30sp</dimen>
+    <dimen name="t2">17sp</dimen>
+    <dimen name="t3">17sp</dimen>
+    <dimen name="t4">17sp</dimen>
+    <dimen name="t5">16sp</dimen>
+    <dimen name="t6">15sp</dimen>
+    <dimen name="t7">14sp</dimen>
+    <dimen name="t8">14sp</dimen>
+    <dimen name="t9">13sp</dimen>
+    <dimen name="t10">12sp</dimen>
+    <dimen name="t11">12sp</dimen>
+    <dimen name="t12">11sp</dimen>
+    <dimen name="t13">10sp</dimen>
+    <dimen name="t14">9sp</dimen>
+    <dimen name="t15">11sp</dimen>
+    <dimen name="t16">7sp</dimen>
+    <dimen name="t17">20sp</dimen>
+    <dimen name="app_titlebar_height">45dp</dimen>
+    <dimen name="app_titlebar_iconheight">45dp</dimen>
+    <dimen name="app_titlebar_iconwidth">45dp</dimen>
+    <dimen name="my_listitem_height">50dp</dimen>
+
+</resources>

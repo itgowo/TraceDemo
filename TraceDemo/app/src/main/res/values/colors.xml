@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="v180_color1">#FFFFFF</color>
+    <color name="v180_color3">#e2e2e2</color>
+    <color name="v180_color5">#f2f2f2</color>
+    <color name="v180_color6">#999999</color>
+    <color name="v180_color7">#fe671e</color>
+    <color name="v180_color9">#32cb21</color>
+    <color name="v180_color10">#FFFFFF</color>
+    <color name="v180_color11">#f2f2f2</color>
+    <color name="v180_color12">#7c7c7c</color>
+    <color name="v180_color13">#e5e5e5</color>
+    <color name="v180_color14">#000000</color>
+    <color name="v180_color14_40">#40000000</color>
+    <color name="v180_color14_80">#80000000</color>
+    <color name="v180_color15">#04aaaa</color>
+
+    <color name="v180_color7_20">#20fe671e</color>
+    <color name="v180_color7_40">#40fe671e</color>
+    <color name="v180_black_1">#242424</color>
+    <color name="v180_color16">#36353a</color>
+    <color name="v180_color17">#85bbb8</color>
+    <color name="v180_color18">#82888e</color>
+    <color name="v180_color19">#ea4e3d</color>
+    <color name="v180_color20">#4e5359</color>
+
+    <color name="v180_text_1">#242424</color>
+    <color name="v180_text_2">#c0c0c0</color>
+    <color name="v180_text_3">#666666</color>
+    <color name="v180_text_4">#e5e5e5</color>
+    <color name="v180_text_main">#777777</color>
+    <color name="v180_text_5">#777777</color>
+    <color name="v180_text_6">#999999</color>
+    <color name="v180_text_7">#ffffff</color>
+    <color name="v180_text_8">#fe671e</color>
+
+
+    <color name="ActivityBackgroundColor">@color/v180_color5</color>
+    <color name="ActivityBackgroundColorWhite">@color/v180_color1</color>
+    <color name="ActivityTitleBackgroundColor">@color/v180_color16</color>
+    <color name="defaultSpiltLineColor">@color/v180_color3</color>
+</resources>

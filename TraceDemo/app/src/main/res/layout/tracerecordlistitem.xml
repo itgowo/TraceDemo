@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:background="@color/ActivityBackgroundColorWhite"
+              android:paddingBottom="10dp"
+              android:gravity="center_vertical"
+              android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tracetype_run"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitCenter">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="2.44"
+        android:textColor="@color/v180_text_1"
+        android:textSize="@dimen/t13"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="1"
+        android:text="公里"
+        android:textColor="@color/v180_text_6"
+        android:textSize="@dimen/t11"/>
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/trace_time"
+        android:drawablePadding="5dp"
+        android:text="00:47:00"
+        android:textColor="@color/v180_text_1"
+        android:textSize="@dimen/t11"/>
+
+
+    <TextView
+        android:id="@+id/peisu"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/trace_history"
+
+        android:drawablePadding="5dp"
+        android:text="8:23"
+        android:textColor="@color/v180_text_1"
+        android:textSize="@dimen/t11"/>
+
+</LinearLayout>

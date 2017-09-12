@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+   >
+
+    <com.itgowo.sport.trace.tracedemo.Other.TitleBarView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.itgowo.sport.trace.tracedemo.Other.TitleBarView>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"></com.baidu.mapapi.map.MapView>
+
+    <LinearLayout
+        android:id="@+id/statusview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:layout_margin="10dp"
+        android:background="@drawable/backgrounp_gray1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gpsImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgrounp_orange"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/gps_signal_0"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="GPS"
+            android:textColor="@color/v180_text_7"
+            android:textSize="@dimen/t11"/>
+
+        <TextView
+            android:id="@+id/gpsTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/v180_text_7"
+            android:textSize="@dimen/t11"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/bottomLayoutStarted"
+        android:layout_alignParentBottom="true"
+        android:background="@color/v180_color16"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/SportTypeRun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trance_run"/>
+
+            <ImageView
+                android:id="@+id/SportTypeBike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/trance_bike2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TotalMileageTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_gray"
+                android:gravity="center"
+                android:text="0.00km\n总里程"
+                android:textColor="@color/v180_text_7"
+                android:textSize="@dimen/t11"/>
+
+            <TextView
+                android:id="@+id/StartSportTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/circle_orange"
+                android:gravity="center"
+                android:text="开始"
+                android:textColor="@color/v180_text_7"
+                android:textSize="@dimen/t4"/>
+
+            <TextView
+                android:id="@+id/AllTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_deepblue"
+                android:gravity="center"
+                android:text="00:00:00\n总时间"
+                android:textColor="@color/v180_text_7"
+                android:textSize="@dimen/t11"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayoutStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        >
+
+        <include layout="@layout/trace_includelayout"></include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/locklayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/v180_color14_40"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <com.itgowo.sport.trace.tracedemo.Other.DragButton.SlidingButtonLayout
+            android:id="@+id/lockBT"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/circlerect_gray"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            app:imageview_background="@drawable/lock1"
+            app:textview_dragfinish_textcolor="@color/v180_text_2"
+            app:textview_text="滑动以解锁"
+            app:textview_textcolor="@color/v180_text_2"></com.itgowo.sport.trace.tracedemo.Other.DragButton.SlidingButtonLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/CountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/v180_color14_80"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/CountTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3"
+            android:gravity="center"
+            android:background="@null"
+            android:textColor="@color/v180_color1"
+            android:textSize="70sp"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/msg"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

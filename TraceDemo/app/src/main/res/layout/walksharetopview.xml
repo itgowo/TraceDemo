@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/ActivityBackgroundColorWhite"
+                android:layout_height="wrap_content"
+               >
+
+    <ImageView
+        android:id="@+id/sharehead"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/sharename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/sharehead"
+        android:lines="1"
+        android:maxLength="28"
+        android:text="@string/app_name"
+        android:textColor="@color/v180_text_1"
+        android:textSize="@dimen/t5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sharename"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/sharehead"
+        android:lines="1"
+        android:maxLength="28"
+        android:text="http://lujianchao.com"
+        android:textColor="@color/v180_text_5"
+        android:textSize="@dimen/t9"/>
+
+    <RelativeLayout
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon2"/>
+
+        <TextView
+            android:id="@+id/sharelength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxLength="28"
+            android:paddingBottom="10dp"
+            android:text="31.5\nKM"
+            android:textColor="@color/v180_text_7"
+            android:textSize="@dimen/t13"/>
+    </RelativeLayout>
+</RelativeLayout>

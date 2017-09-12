@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="slidingButtonLayout">
+        <!--滑动完成以后显示的text-->
+        <attr name="textview_dragfinish_text" format="string"></attr>
+        <!--滑动前显示的text-->
+        <attr name="textview_text" format="string"></attr>
+        <!--底部text size-->
+        <attr name="textview_textsize" format="integer"></attr>
+        <!--底部text color-->
+        <attr name="textview_textcolor" format="color"></attr>
+        <!--底部 滑动完成text color-->
+        <attr name="textview_dragfinish_textcolor" format="color"></attr>
+        <!--底部text 背景色-->
+        <attr name="textview_backgroundColor" format="color"></attr>
+        <!--底部text 滑动完成背景色-->
+        <attr name="textview_dragfinish_backgroundColor" format="color"></attr>
+        <!--底部text 背景图-->
+        <attr name="textview_backgroundDrawable" format="reference"></attr>
+        <!--底部text 背景图-->
+        <attr name="textview_dragfinish_backgroundDrawable" format="reference"></attr>
+        <!--可滑动imageview 背景图-->
+        <attr name="imageview_background" format="reference"></attr>
+        <!--可滑动imageview 背景图-->
+        <attr name="imageview_dragfinish_background" format="reference"></attr>
+        <!--可滑动imageview 背景color-->
+        <attr name="imageview_backgroundColor" format="color"></attr>
+        <!--可滑动imageview 滑动结束背景color-->
+        <attr name="imageview_dragfinish_backgroundColor" format="color"></attr>
+
+
+    </declare-styleable>
+</resources>
